@@ -1,0 +1,31 @@
+{
+    "presets": [
+        "env" ,
+        "es2015", 
+        "react"],
+    "plugins": [
+        "transform-class-properties",
+        ["transform-object-rest-spread", {"useBuiltIns": true}],
+        ["transform-react-jsx", {"useBuiltIns": true}],
+        ["transform-runtime", {
+            "helpers": false,
+            "polyfill": false,
+            "regenerator": true}
+        ],
+        ["transform-regenerator", { "async": false}],
+        "syntax-dynamic-import",
+        "transform-function-bind",
+        "transform-export-extensions",
+        "transform-exponentiation-operator"
+    ],
+    "env":{
+        "production":{
+        },
+        "development":{
+            "plugins":[
+                "transform-react-jsx-source",
+                "transform-react-jsx-self"
+            ]
+        }
+    }
+}

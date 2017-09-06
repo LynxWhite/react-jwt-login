@@ -9,6 +9,11 @@ import root from '../sagas/root'
 import t1 from './t1'
 import t2 from './t2'
 import LoginForm from './login/login-form';
+import AuthWrapper from './authentication/auth-wrapper';
+
+
+import '../resources/stylus/basic-config.styl'
+import '../resources/stylus/basic-classes.styl';
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -30,7 +35,8 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={t1}/>
                         <Route exact path='/edit' component={t2}/>
-                        <Route exact path='/login' component={LoginForm}/>
+                        <Route exact path='/login' component={AuthWrapper}/>
+                        <Route exact path='/signup' component={AuthWrapper}/>
                     </Switch>
                 </Router>
             </Provider>

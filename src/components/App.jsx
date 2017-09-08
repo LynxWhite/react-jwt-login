@@ -10,7 +10,7 @@ import t1 from './t1'
 import t2 from './t2'
 import LoginForm from './login/login-form';
 import AuthWrapper from './authentication/auth-wrapper';
-
+import CanvasWrapper from './canvas/canvas-wrapper';
 
 import '../resources/stylus/basic-config.styl'
 import '../resources/stylus/basic-classes.styl';
@@ -37,6 +37,7 @@ class App extends Component {
                         <Route exact path='/edit' component={t2}/>
                         <Route exact path='/login' component={AuthWrapper}/>
                         <Route exact path='/signup' component={AuthWrapper}/>
+                        <Route exact path='/canvas' component={CanvasWrapper}/>
                     </Switch>
                 </Router>
             </Provider>

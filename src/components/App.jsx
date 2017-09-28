@@ -35,7 +35,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={t1}/>
                         <Route exact path='/edit' component={t2}/>
-                        <Route exact path='/login' component={AuthWrapper}/>
+                        <Route exact path='/signin' component={AuthWrapper}/>
                         <Route exact path='/signup' component={AuthWrapper}/>
                         <Route exact path='/canvas' component={CanvasWrapper}/>
                     </Switch>

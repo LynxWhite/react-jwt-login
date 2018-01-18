@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Calendar from 'rc-calendar'
 
 class t1 extends Component {
     render() {
         return (
             <div>
-                Hello 1
+                <Calendar/>
             </div>
-        );
+        )
     }
 }
 
-export default t1;
+export default t1
